@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="20"
+    tools:context=".ui.fragments.CategoryNewsFragment">
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1.5"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/businessNewsButtonCategoryFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Business"
+                android:textAppearance="@style/TextAppearance.Material3.TitleLarge"></Button>
+
+            <Button
+                android:id="@+id/entertainmentNewsButtonCategoryFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entertainment"
+                android:textAppearance="@style/TextAppearance.Material3.TitleLarge"></Button>
+
+            <Button
+                android:id="@+id/generalNewsButtonCategoryFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="General"
+                android:textAppearance="@style/TextAppearance.Material3.TitleLarge"></Button>
+
+
+            <Button
+                android:id="@+id/healthNewsButtonCategoryFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Health"
+                android:textAppearance="@style/TextAppearance.Material3.TitleLarge"></Button>
+
+            <Button
+                android:id="@+id/scienceNewsButtonCategoryFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Science"
+                android:textAppearance="@style/TextAppearance.Material3.TitleLarge"></Button>
+
+            <Button
+                android:id="@+id/sportsNewsButtonCategoryFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sports"
+                android:textAppearance="@style/TextAppearance.Material3.TitleLarge"></Button>
+
+            <Button
+                android:id="@+id/technologyNewsButtonCategoryFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Technology"
+                android:textAppearance="@style/TextAppearance.Material3.TitleLarge"></Button>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCategoryNewsFragment"
+        android:layout_width="match_parent"
+        android:layout_weight="18.5"
+        android:layout_height="0dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
