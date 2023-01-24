@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/setupFragment">
+
+    <fragment
+        android:id="@+id/setupFragment"
+        android:name="mohit.newshive.ui.fragments.SetupFragment"
+        android:label="NewsHive"
+        tools:layout="@layout/fragment_setup" >
+        <action
+            app:popUpTo="@id/setupFragment"
+            app:popUpToInclusive="true"
+            android:id="@+id/action_setupFragment_to_topNewsFragment"
+            app:destination="@id/topNewsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/topNewsFragment"
+        android:name="mohit.newshive.ui.fragments.TopNewsFragment"
+        android:label="NewsHive"
+        tools:layout="@layout/fragment_top_news" >
+
+        <action
+            android:id="@+id/action_topNewsFragment_to_newsViewFragment"
+            app:destination="@id/newsViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_search_news"
+        android:name="mohit.newshive.ui.fragments.SearchNews"
+        android:label="NewsHive"
+        tools:layout="@layout/fragment_search_news" >
+        <action
+            android:id="@+id/action_navigation_search_news_to_newsViewFragment"
+            app:destination="@id/newsViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryNewsFragment"
+        android:name="mohit.newshive.ui.fragments.CategoryNewsFragment"
+        android:label="NewsHive"
+        tools:layout="@layout/fragment_category_news" >
+        <action
+            android:id="@+id/action_categoryNewsFragment_to_newsViewFragment"
+            app:destination="@id/newsViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsViewFragment"
+        android:name="mohit.newshive.ui.fragments.NewsViewFragment"
+        android:label="fragment_news_view"
+        tools:layout="@layout/fragment_news_view" >
+        <argument
+            app:argType="string"
+            android:name="url"/>
+    </fragment>
+</navigation>
+
+
